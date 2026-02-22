@@ -17,17 +17,18 @@ body {
 .container {
     max-width: 1200px;
     display: flex;
+    /* might want to consider removing this and only adding it to the sections that need it as opposed to the entire container */
     margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Header */
 header {
-    
+
     border: 2px solid #000;
     padding: 20px 0;
     text-align: center;
-    
+
 }
 
 .header-content {
@@ -37,8 +38,8 @@ header {
 }
 
 .logo img {
-    height: 75%; 
-    width: 75%; 
+    height: 75%;
+    width: 75%;
     border: 2px solid #000;
     display: block;
 }
@@ -79,7 +80,7 @@ header {
 
 /* Navigation */
 nav {
-    
+
     border: 2px solid #000;
 }
 
@@ -89,7 +90,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color:#59b379;
+    background-color: #59b379;
 }
 
 nav li {
@@ -110,9 +111,7 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    
-}
+nav a:hover {}
 
 /* Main Layout */
 .main-layout {
@@ -144,7 +143,7 @@ main {
 }
 
 .image-placeholder {
-    
+
     border: 2px solid #000;
     padding: 20px;
     text-align: center;
@@ -157,11 +156,10 @@ main {
 }
 
 .text-area {
-    
+
     border: 2px solid #000;
     padding: 20px;
     min-height: 180px;
-    flex: 1;
 }
 
 /* Right Sidebar */
@@ -174,16 +172,15 @@ main {
 }
 
 .nav-image {
-    
+
     border: 2px solid #000;
-    
+
     text-align: center;
     min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    
 }
 
 .nav-image img {
@@ -206,6 +203,56 @@ main {
     justify-content: center;
 }
 
+/* About us Styles */
+.team-members {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.team-members strong {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* Footer */
 footer {
     background-color: #000;
@@ -223,18 +270,45 @@ footer {
 }
 
 .footer-content a {
-     text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+
+/* MOBILE — up to 767px */
+
+@media (max-width: 767px) {
     .main-layout {
         flex-direction: column;
+        gap: 0;
     }
-    
-    .left-column,
-    .right-sidebar {
-        width: 100%;
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 28px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero img {
+        height: 220px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .nav-image {
+        flex: 1;
+        min-height: 150px;
     }
 
     nav ul {
@@ -245,8 +319,137 @@ footer {
         border-right: none;
         border-bottom: 2px solid #000;
     }
-    
+
     nav li:last-child {
         border-bottom: none;
     }
+
+    nav a {
+        padding: 14px 10px;
+        font-size: 1rem;
+    }
+
+    nav .container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    /* Left column: horizontal row of images instead of vertical stack */
+    .left-column {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .left-column .image-placeholder {
+        flex: 1;
+        min-height: 100px;
+        font-size: 0.8rem;
+    }
+
+    /* Right sidebar: stack below main content, full width */
+    .right-sidebar {
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .active-space {
+        flex: 1;
+        min-height: 100px;
+        padding: 20px;
+    }
+
+    /* Text areas full width */
+    .text-area {
+        min-height: unset;
+        margin-bottom: 0;
+    }
+
+    /* Team grid: single column on mobile */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Center and resize team card images */
+    .team-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Reduce passive space on mobile */
+    .passive-space {
+        height: 20px;
+    }
+
+    .section-spacer {
+        height: 15px;
+    }
+
+    /* Footer text size */
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* TABLET — 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    .header-title {
+        font-size: 36px;
+    }
+
+    /* Shrink hero height */
+    .hero img {
+        height: 400px;
+    }
+
+    nav .container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    /* Collapse left and right columns so main content gets more room */
+    .left-column,
+    .right-sidebar {
+        width: 120px;
+    }
+
+    /* Team grid: 2 columns on tablet instead of 3 */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Slightly smaller team card images */
+    .team-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Reduce nav link padding so items don't crowd */
+    nav a {
+        padding: 15px 6px;
+        font-size: 0.85rem;
+    }
+
+
+
+
+
+
+
 }
