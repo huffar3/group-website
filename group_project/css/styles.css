@@ -28,19 +28,25 @@ header {
     border: 2px solid #000;
     padding: 20px 0;
     text-align: center;
+    width: 100%;
 
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 20px; */
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
 }
 
 .logo img {
-    height: 75%;
-    width: 75%;
-    border: 2px solid #000;
+    height: auto;
+    width: 100%;
+    /* border: 2px solid #000; */
     display: block;
 }
 
@@ -58,10 +64,11 @@ header {
 }
 
 .hero img {
-    width: 100%;
-    height: 100%s;
-    height: 600px;
+      width: 100%;
+    height: 500px;
     display: block;
+    /* object-fit: cover; */
+    object-position: center;
 }
 
 .hero h1 {
@@ -173,14 +180,17 @@ main {
 
 .nav-image {
 
-    border: 2px solid #000;
-
-    text-align: center;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    border: 2px solid #000; 
+    /* text-align: center; */
+     /* min-height: 300px;  */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-weight: bold; */
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .nav-image img {
@@ -298,7 +308,8 @@ footer {
     }
 
     .hero img {
-        height: 220px;
+
+        height: auto;
     }
 
     .hero h1 {
@@ -361,11 +372,10 @@ footer {
         margin-top: 20px;
     }
 
-    .active-space {
-        flex: 1;
-        min-height: 100px;
-        padding: 20px;
-    }
+    .active-space{
+    display: none;
+}
+
 
     /* Text areas full width */
     .text-area {
@@ -410,7 +420,7 @@ footer {
 
     /* Shrink hero height */
     .hero img {
-        height: 400px;
+        height: auto;
     }
 
     nav .container {
@@ -430,7 +440,7 @@ footer {
 
     /* Team grid: 2 columns on tablet instead of 3 */
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
@@ -439,7 +449,9 @@ footer {
         width: 120px;
         height: 120px;
     }
-
+    .active-space{
+        display: none;
+    }
     /* Reduce nav link padding so items don't crowd */
     nav a {
         padding: 15px 6px;
