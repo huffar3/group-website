@@ -287,6 +287,9 @@ main {
     cursor: pointer;
 }
 
+#answer ul,#answer ol {
+    padding-left: 20px;
+}
 /* Footer */
 footer {
     background-color: #000;
