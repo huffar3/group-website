@@ -214,25 +214,25 @@ main {
 }
 
 /* About us Styles */
-.team-members {
+.team-members, .appetizers {
     width: 100%;
     padding: 20px 0;
 }
 
-.team-members strong {
+.team-members strong, .appetizers strong {
     display: block;
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.team-grid {
+.team-grid, .app-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.team-card {
+.team-card, .app-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,7 +243,7 @@ main {
     background-color: #f9f9f9;
 }
 
-.team-card img {
+.team-card img, .app-card img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -251,12 +251,12 @@ main {
     margin-bottom: 15px;
 }
 
-.team-card h3 {
+.team-card h3, .app-card h3 {
     font-size: 1.1rem;
     margin: 0 0 10px 0;
 }
 
-.team-card p {
+.team-card p, .app-card p {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.5;
@@ -384,13 +384,13 @@ footer {
     }
 
     /* Team grid: single column on mobile */
-    .team-grid {
+    .team-grid, .app-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     /* Center and resize team card images */
-    .team-card img {
+    .team-card img, .app-card img {
         width: 120px;
         height: 120px;
     }
@@ -439,13 +439,13 @@ footer {
     }
 
     /* Team grid: 2 columns on tablet instead of 3 */
-    .team-grid {
+    .team-grid, .app-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     /* Slightly smaller team card images */
-    .team-card img {
+    .team-card img, .app-card img {
         width: 120px;
         height: 120px;
     }
