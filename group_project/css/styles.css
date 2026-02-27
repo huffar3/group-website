@@ -179,6 +179,33 @@ main {
     min-height: 180px;
 }
 
+.text-areaEmbedded {
+
+    border: 2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 350px;
+    padding : 0;
+}
+
+/* Style rules for instagram embed*/
+.text-areaEmbedded .instagram-media,
+.text-areaEmbedded .instagram-media * {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+.text-areaEmbedded .instagram-media {
+    min-height: 350px;        
+    margin: 0 auto !important;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+
 /* Right Sidebar */
 .right-sidebar {
     display: flex;
