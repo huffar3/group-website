@@ -64,7 +64,7 @@ header {
 }
 
 .hero img {
-      width: 100%;
+    width: 100%;
     height: 500px;
     display: block;
     /* object-fit: cover; */
@@ -180,9 +180,9 @@ main {
 
 .nav-image {
 
-    border: 2px solid #000; 
+    border: 2px solid #000;
     /* text-align: center; */
-     /* min-height: 300px;  */
+    /* min-height: 300px;  */
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
@@ -214,25 +214,29 @@ main {
 }
 
 /* About us Styles */
-.team-members, .appetizers {
+.team-members,
+.appetizers {
     width: 100%;
     padding: 20px 0;
 }
 
-.team-members strong, .appetizers strong {
+.team-members strong,
+.appetizers strong {
     display: block;
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.team-grid, .app-grid {
+.team-grid,
+.app-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.team-card, .app-card {
+.team-card,
+.app-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,7 +247,8 @@ main {
     background-color: #f9f9f9;
 }
 
-.team-card img, .app-card img {
+.team-card img,
+.app-card img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -251,16 +256,35 @@ main {
     margin-bottom: 15px;
 }
 
-.team-card h3, .app-card h3 {
+.team-card h3,
+.app-card h3 {
     font-size: 1.1rem;
     margin: 0 0 10px 0;
 }
 
-.team-card p, .app-card p {
+.team-card p,
+.app-card p {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.5;
     margin: 0;
+}
+
+.app-card {
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.close-button {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -372,9 +396,9 @@ footer {
         margin-top: 20px;
     }
 
-    .active-space{
-    display: none;
-}
+    .active-space {
+        display: none;
+    }
 
 
     /* Text areas full width */
@@ -384,13 +408,15 @@ footer {
     }
 
     /* Team grid: single column on mobile */
-    .team-grid, .app-grid {
+    .team-grid,
+    .app-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     /* Center and resize team card images */
-    .team-card img, .app-card img {
+    .team-card img,
+    .app-card img {
         width: 120px;
         height: 120px;
     }
@@ -439,19 +465,23 @@ footer {
     }
 
     /* Team grid: 2 columns on tablet instead of 3 */
-    .team-grid, .app-grid {
+    .team-grid,
+    .app-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     /* Slightly smaller team card images */
-    .team-card img, .app-card img {
+    .team-card img,
+    .app-card img {
         width: 120px;
         height: 120px;
     }
-    .active-space{
+
+    .active-space {
         display: none;
     }
+
     /* Reduce nav link padding so items don't crowd */
     nav a {
         padding: 15px 6px;

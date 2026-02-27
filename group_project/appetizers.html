@@ -77,43 +77,48 @@
                     <div class="appetizers">
                         <strong>Dishes</strong>
                         <div class="app-grid">
-                            <div class="app-card">
+                            <div class="app-card" onclick="app1()">
                                 <img src="images/Skillet-Beef-Nachos-800x1023.jpg" alt=" A Skillet Filled with Layers of Beef Nachos and Topped with Melted Cheese, 
                                 Tomato, Sour Cream, and Lime. source: https://iambaker.net/beef-nachos/">
                                 <h3>Big Game Day Nachos</h3>
-                                <p>Garrett is our CEO and founder, with a passion for creating unforgettable game day
-                                    experiences through delicious
-                                    snacks.</p>
+                                <!-- <p onclick><strong>Nachos</strong></p> -->
                             </div>
-                            <div class="app-card">
+                            <div class="app-card" onclick="app2()">
                                 <img src="images/LOADED-POTATO-SKINS.jpg"
                                     alt="Stacked Loaded Potato Skins on white plate with dipping sauce in back. source: https://tornadoughalli.com/loaded-potato-skins/">
                                 <h3>Loaded Potato Skins</h3>
-                                <p>Jose is our head chef, specializing in creating innovative and delicious game day
-                                    snacks.</p>
+
                             </div>
-                            <div class="app-card">
+                            <div class="app-card" onclick="app3()">
                                 <img src="images/buffalo-wings-overhead2-WR-768x1024.jpg"
                                     alt="overhead view of buffalo wings on a white platter with celery and white sauce. source:https://www.budgetbytes.com/buffalo-wings/">
                                 <h3>Game Day Wings</h3>
-                                <p>Sumit is our marketing manager, responsible for promoting our brand and ensuring our
-                                    message reaches the right audience.</p>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="section-spacer"></div>
 
                 <div class="text-area">
+                    <div id="answer">
+                        <h2></h2>
+                        <p></p>
+                            <button onclick="clearAnswer()" class="close-button" style="display:none">✕ Close</button>
+                    </div>
+
                 </div>
             </main>
 
             <!-- Right Column - Sidebar -->
             <aside class="right-sidebar">
                 <div class="nav-image">
-                    <strong>Navigation Image</strong>
+                    <!-- <strong>Navigation Image</strong> -->
+                    <a href="2027game.html"><img src="images/SuperBowl_XLI.jpg" alt="Super Bowl XLI"></a>
                 </div>
+
 
                 <div class="section-spacer"></div>
 
@@ -136,7 +141,7 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
