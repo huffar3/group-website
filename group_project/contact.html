@@ -72,32 +72,57 @@
             <!-- Middle Column - Text Area -->
             <main>
                 <div class="text-area">
-                    <strong>Text area</strong>
+                    <strong>Get In Touch</strong>
                 </div>
 
                 <div class="section-spacer"></div>
 
                 <div class="text-area">
-                    <strong>Use div elements to put passive white spaces between sections</strong>
+                    <form class="form-grid">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <div class="section-spacer"></div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required>
+                        <label for="lname"> Last Name:</label>
+                        <input type="text" id="lname" name="lname" required><br>
+                        <div class="section-spacer"></div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone"> Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                </fieldset>
                 </div>
 
                 <div class="section-spacer"></div>
 
                 <div class="text-area">
+                     <fieldset> 
+                    <legend>Additional Information</legend>
+                    <p>I would like more information about:</p>   
+                        <label for="vol">
+                            <input type="radio" name="info" id="vol" value="Volunteer">Volunteering
+                        </label>
+                        <label for="sponsor">
+                            <input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">Sponsorship Opportunities
+                        </label><br>
+                        <label for="other">
+                            <input type="radio" name="info" id="other" value="Other">Other, please specify in the message box below
+                        </label>
+                        <label for="question">What questions do you have for us?</label>
+                        <textarea id="question" name="question" rows="5" required></textarea>
+                </fieldset>
                 </div>
             </main>
 
             <!-- Right Column - Sidebar -->
             <aside class="right-sidebar">
                 <div class="nav-image">
-                    <img src="images/SuperBowl_XLI.jpg" alt="Hero Image">
+                    <a href="2027game.html"><img src="images/SuperBowl_XLI.jpg" alt="Super Bowl XLI"></a>
                 </div>
 
                 <div class="section-spacer"></div>
 
-                <div class="active-space">
-                    Active White Space
-                </div>
             </aside>
         </div>
     </div>
