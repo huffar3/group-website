@@ -31,8 +31,9 @@
     <section class="hero">
 
         <!-- <h1>Hero Image</h1> -->
-        <img src="images/hero_copy1_1600x500.png"
+        <a href="index.html"><img src="images/hero_copy1_1600x500.png"
             alt="yellow background with pizza, hot dog, beer and football on foreground">
+        </a>
     </section>
 
     <!-- Passive White Space -->
@@ -56,7 +57,7 @@
                     <img src="images/jose_headshot.jpg" alt="Jose">
                     <h3>Jose</h3>
                     <p>Have a a recipe to share with the world? Email Jose at:</p>
-                    <p><a href="mailto:Jose@gameday.net">Jose@gameday.net</a></p>
+                    <p><a href="mailto:jose@gameday.net">jose@gameday.net</a></p>
                 </div>
 
                 <div class="section-spacer"></div>
@@ -65,7 +66,7 @@
                     <img src="images/sumit_headshot.jpg" alt="Sumit">
                     <h3>Sumit</h3>
                     <p>Did we miss an important Gameday dish that is a must have? Email Sumit at:</p>
-                    <p><a href="mailto:Sumit@gameday.net">Sumit@gameday.net</a></p>
+                    <p><a href="mailto:sumit@gameday.net">sumit@gameday.net</a></p>
                 </div>
             </div>
 
@@ -73,46 +74,70 @@
             <main>
                 <div class="text-area">
                     <strong>Get In Touch</strong>
+                    <br>
+                    <p>
+                        Here at Big Gameday snacks we undertand that our viewers have many different types of questions, request and concerns. It is our goal to
+                        address all input from our community. Please drop your question below and will do our best to get back to you within 24 hours. <br><br>
+                        
+                        If you ever here in south central Wisconsin stop by and give us a visit! We are happy to have tours to show you what goes on behind the 
+                        scences. Whether you are intersted in watching Jose prepare master class dishes, having a conversation with Sumit in how he was able to 
+                        propel us to the outreach we have now, or have have some playful bar bantar with Garrett while he makes you a drink. <br><br>
+                        
+                        We started off as three strangers sitting at a bar with a common passion of food, sports and bringing the world together. This year we are
+                        celebrating year 5 as we are continously growing and sharing our vision of what the Super Bowl should be all about. We want to help you make
+                        the Big Gameday Snacks that brings families and communities closer for a lifetime. We thank <strong>ALL</strong> of you for your support.
+                    </p>
+                </div>
+
+                <div class="section-spacer"></div>
+                
+                <div class="text-area">
+
                 </div>
 
                 <div class="section-spacer"></div>
 
                 <div class="text-area">
                     <form class="form-grid">
-                <fieldset>
-                    <legend>Contact Form</legend>
-                    <div class="section-spacer"></div>
-                        <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname" required>
-                        <label for="lname"> Last Name:</label>
-                        <input type="text" id="lname" name="lname" required><br>
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            <div class="section-spacer"></div>
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="fname" required>
+                                <label for="lname"> Last Name:</label>
+                                <input type="text" id="lname" name="lname" required><br>
+                                <div class="section-spacer"></div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="phone"> Phone:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                        </fieldset>
+                        </div>
+
                         <div class="section-spacer"></div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="phone"> Phone:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                </fieldset>
-                </div>
 
-                <div class="section-spacer"></div>
-
-                <div class="text-area">
-                     <fieldset> 
-                    <legend>Additional Information</legend>
-                    <p>I would like more information about:</p>   
-                        <label for="vol">
-                            <input type="radio" name="info" id="vol" value="Volunteer">Volunteering
-                        </label>
-                        <label for="sponsor">
-                            <input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">Sponsorship Opportunities
-                        </label><br>
-                        <label for="other">
-                            <input type="radio" name="info" id="other" value="Other">Other, please specify in the message box below
-                        </label>
-                        <label for="question">What questions do you have for us?</label>
-                        <textarea id="question" name="question" rows="5" required></textarea>
-                </fieldset>
-                </div>
+                        <div class="text-area">
+                            <fieldset> 
+                            <legend>Additional Information</legend>
+                                <strong>I would like more information about:</strong> <br>  
+                                    <label for="vol">
+                                        <input type="radio" name="info" id="vol" value="Taste Tester">Taste Tester
+                                    </label>
+                                    <label for="sponsor">
+                                        <input type="radio" name="info" id="sponsor" value="Career Opportunities">Career Opportunities
+                                    </label><br>
+                                    <label for="other">
+                                        <input type="radio" name="info" id="other" value="Other">Other, please specify in the message box below
+                                    </label>
+                                    <br>
+                                    <label for="question">What questions do you have for us?</label><br>
+                                    <textarea id="question" name="question" rows="5"  required></textarea>
+                            </fieldset>
+                        </div>
+                    
+                        <div class="container-center"><h1><input type="submit" id="submit" value="Submit" class="btn"></div></h1>
+                    </form>
+                <div>    
             </main>
 
             <!-- Right Column - Sidebar -->
@@ -132,7 +157,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container-center">
             <div class="footer-content">
                 <p><strong>Footer</strong></p>
                 <p>Copyright information, customer support email link, authors of the page, link to top of home page</p>
