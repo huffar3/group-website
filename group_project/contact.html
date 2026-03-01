@@ -90,9 +90,18 @@
                 </div>
 
                 <div class="section-spacer"></div>
-                
                 <div class="text-area">
-
+                    <h3>Phone:</h3>
+                    <p> (555) 555-5555</p>
+                    <h3>Address:</h3>
+                    <a href="https://maps.google.com/?q=Camp Randall Stadium, Madison WI" target="_blank">
+                        Camp Randall Stadium, Madison WI
+                    </a>
+                
+                <div class="text-areaMap">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6444671495083!2d-89.41526202385387!3d43.06994457113576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807acc475d5513f%3A0xe005ee8fd16e04a!2sCamp%20Randall%20Stadium!5e0!3m2!1sen!2sus!4v1772322592893!5m2!1sen!2sus" 
+                   width="790" height="590" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 </div>
 
                 <div class="section-spacer"></div>
@@ -117,22 +126,23 @@
 
                             
                             <h2>Additional Information</h2>
-                                <strong>I would like more information about:</strong> <br>  
+                                <strong>I would like more information about:</strong> <br><br>  
                                     <label for="vol">
-                                        <input type="radio" name="info" id="vol" value="Taste Tester">Becoming an offical Taste Tester
+                                        <input type="radio" name="info" id="vol" value="Taste Tester"> Becoming an offical Taste Tester
                                     </label><br>
                                     <label for="sponsor">
-                                        <input type="radio" name="info" id="sponsor" value="Career Opportunities">Career Opportunities
+                                        <input type="radio" name="info" id="sponsor" value="Career Opportunities"> Career Opportunities
                                     </label><br>
                                     <label for="other">
-                                        <input type="radio" name="info" id="other" value="Other">Other, please specify in the message box below
+                                        <input type="radio" name="info" id="other" value="Other"> Other, please specify in the message box below
                                     </label>
+                                    <br><br>
+                                    <label for="question">What questions do you have for us?</label><br><br>
+                                    <textarea id="question" name="question" rows="10"  required style="width:100%"></textarea>
                                     <br>
-                                    <label for="question">What questions do you have for us?</label><br>
-                                    <textarea id="question" name="question" rows="5"  required></textarea>
+                                    <input type="submit" id="submit" value="Submit" class="btn">
                         </div>
-                    
-                        <div class="container-center"><h1><input type="submit" id="submit" value="Submit" class="btn"></div></h1>
+
                     </form>
                 <div>    
             </main>
@@ -141,6 +151,10 @@
             <aside class="right-sidebar">
                 <div class="nav-image">
                     <a href="2027game.html"><img src="images/SuperBowl_XLI.jpg" alt="Super Bowl XLI"></a>
+                </div>
+
+                <div class="image-placeholder video-slot">
+                    <video id="Arrow" src="Media/arrow_up.mp4" autoplay loop muted></video>
                 </div>
 
                 <div class="section-spacer"></div>
