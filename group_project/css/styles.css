@@ -152,6 +152,12 @@ nav a:hover {
     display: flex;
     flex-direction: column;
 }
+.left-column_contact {
+    width: 150px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Main Content */
 main {
@@ -207,24 +213,46 @@ main {
     padding: 20px;
     min-height: 180px;
     max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .text-areaMap {
     position: relative;
     min-height: 300px;
-    width: flex;
+    width: 100%;
     max-width: 800px;
     max-height: 800px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
-.text-areaEmbedded {
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
 
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+.text-areaEmbedded {
     border: 2px solid #000;
     border-radius: 15px;
     overflow: hidden;
     min-height: 350px;
     padding : 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Style rules for instagram embed*/
@@ -250,6 +278,7 @@ main {
     height: 100%;
     border: 0;
     object-fit: contain;
+    box-sizing: border-box;
 }
 
 /* Style rules for table*/
@@ -501,6 +530,16 @@ footer {
     nav ul {
         width: 100%;
     }
+    
+    .title-video{
+        display: none;
+    }
+    .text-areaMap{
+        display: none;
+    }
+    .left-column_contact{
+        display: none;
+    }
 
     /* Left column: horizontal row of images instead of vertical stack */
     .left-column {
@@ -574,6 +613,13 @@ footer {
     .footer-content p {
         font-size: 0.9rem;
     }
+    .phone {
+        display: inline;
+    }
+
+    .phone-desk {
+        display: none;
+    }
 }
 
 /* TABLET — 768px to 1024px */
@@ -627,6 +673,14 @@ footer {
         padding: 15px 6px;
         font-size: 0.85rem;
     }
+    .phone {
+    display: none;
+    }
+
+    .phone-desk {
+        display: block;   /* or inline-block if you prefer */
+    }
+
 }
 /* Desktop - 1025px and up */
 @media (min-width: 1025px) {
@@ -653,10 +707,13 @@ footer {
         grid-template-columns: auto auto auto;
         grid-gap: 30px;
     }
-     .form-grid{
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 20px;
-        text-box: flex;
+    .phone {
+    display: none;
     }
+
+    .phone-desk {
+        display: block;   /* or inline-block if you prefer */
+    }
+
+    
 }
