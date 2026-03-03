@@ -80,13 +80,39 @@
                 <div class="section-spacer"></div>
 
                 <div class="text-area">
-                    <strong>Use div elements to put passive white spaces between sections</strong>
+                    <div class="appetizers">
+                        <strong>Top Drinks</strong>
+                        <div class="app-grid">
+                            <div class="app-card" onclick="app1()">
+                                <img src="images/mai_tai.png" alt=" Mai Tai cocktail garnished with a cherry and lime slices source: https://www.allrecipes.com/recipe/73287/mai-tai/">
+                                <h3>Mai Tai</h3>
+                                <!-- <p onclick><strong>Nachos</strong></p> -->
+                            </div>
+                            <div class="app-card" onclick="app2()">
+                                <img src="images/mojito.jpg"
+                                    alt="Mojito garnished with mint on wood table surrounded by cut limes">
+                                <h3>Mojito</h3>
+
+                            </div>
+                            <div class="app-card" onclick="app3()">
+                                <img src="images/bloodymary_card.jpg"
+                                    alt="Bloody Mary garnished with a full meal. Garnish includes cheese, olive, pepperoni, chicken wing, cellary, lobster tail, and lime">
+                                <h3>Bloody Mary</h3>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="section-spacer"></div>
 
                 <div class="text-area">
-                </div>
+                    <div id="answer">
+                        <h2></h2>
+                        <p></p>
+                            <button onclick="clearAnswer()" class="close-button" style="display:none">✕ Close</button>
+                    </div>
             </main>
 
             <!-- Right Column - Sidebar -->
