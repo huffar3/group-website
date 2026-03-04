@@ -7,98 +7,121 @@ var closeButton = document.querySelector(".close-button");
 function clearAnswer() {
   heading.textContent = "";
   heading.style.display = "none";
-  answer.textContent = "";
+  answer.innerHTML = "";
   closeButton.style.display = "none";
+  document.getElementById('answer-container').style.display = 'none';
+}
+//Hamburger menu function
+function hamburger() {
+
+  var navlinks = document.getElementById("nav-links");
+  var menuicon = document.getElementById("icon");
+  if (navlinks.style.display === "block") {
+    navlinks.style.display = "";
+    menuicon.style.color = "#2a1f14";
+  } else {
+    navlinks.style.display = "block";
+    menuicon.style.color = "#f6eee4";
+  }
+  // Close menu when a nav link is clicked
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('nav-links').style.display = "";  // ← empty string
+        document.getElementById('icon').style.color = '#2a1f14';
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('.mobile-nav');
+    const navLinks = document.getElementById('nav-links');
+    if (!nav.contains(event.target)) {
+        navLinks.style.display = "";  // ← empty string
+        document.getElementById('icon').style.color = '#2a1f14';
+    }
+});
 }
 
 //appetizer functions
 
 function app1() {
-  heading.textContent = "Big Game Day Nachos";
+  document.getElementById('answer-container').style.display = 'block';
+  heading.textContent = "Best-Ever Pigs in a Blanket";
   heading.style.display = "block";
-  answer.innerHTML = "<h3>Ingredients</h3>" +
+  answer.innerHTML = "<img src='images/pigs_in_a_blanket.png' alt='overhead shot of pigs in a blanket on a plate with mustard on the side source: https://www.thekitchn.com/pigs-in-a-blanket-recipe-23256899'>" +
+  "<h3>Ingredients</h3>" +
     "<br></br>" +
-    "<strong>Nachos</strong>" +
+    "<strong>Best-Ever Pigs in a Blanket</strong>" +
     "<ul>" +
-    "<li>1 pound (453 g) ground beef, cooked</li>" +
-    "<li>1 small onion, diced and cooked</li>" +
-    "<li>1 tablespoon taco seasoning</li>" +
-    "<li>15 ounces refried beans</li>" +
-    "<li>1 large bag tortilla chips</li>" +
-    "<li>2 cups (113 g) mild cheddar cheese, shredded</li>" +
-    "<li>2 cups (113 g) monterey jack cheese, shredded</li>" +
-    "<li>½ cup (86 g) black beans, rinsed, drained</li>" +
-    "</ul>" +
-    "<br></br>" +
-    "<strong>TOPPINGS</strong>" +
-    "<ul>" +
-    "<li>½ avocado, diced</li>" +
-    "<li>1 large tomato, diced</li>" +
-    "<li>¼ cup scallions, sliced</li>" +
-    "<li>¼ cup cilantro, chopped</li>" +
-    "<li>½ cup jalapeños, diced</li>" +
-    "<li>sour cream, for drizzling</li>" +
+    "<li>1 large egg</li>" +
+    "<li>1 teaspoon water</li>" +
+    "<li>1 (12- to 14-ounce) package cocktail-sized smoked sausages or little smokies</li>" +
+    "<li>1 (8-ounce) can refrigerated crescent roll dough</li>" +
+    "<li>Flaky salt or everything bagel seasoning, for sprinkling (optional)</li>" +
     "</ul>" +
     "<br></br>" +
     "<strong>INSTRUCTIONS</strong>" +
     "<ol>" +
-    "<li>Preheat oven to 425ºF.</li>" +
-    "<li>In a medium bowl, combine cooked hamburger, cooked onion, refried beans and taco seasoning. Mix well.</li>" +
-    "<li>To a large, oven-safe skillet, add ⅓ of the tortilla chips. Top with the beef-bean mixture, ⅓ of the cheese, and ⅓ of the black beans. Repeat two more layers.</li>" +
-    "<li>Bake until cheese is melted, about 10 minutes.</li>" +
-    "<li>Top with tomato, avocado, green onions and cilantro. Drizzle with sour cream.</li>" +
+    "<li>    Arrange a rack in the middle of the oven and heat the oven to 375ºF. Line a rimmed baking sheet with parchment paper or a silicone baking mat.</li>" +
+    "<li>Whisk 1 large egg and 1 teaspoon water in a small bowl until combined. Pat 1 (12- to 14-ounce) package cocktail-sized smoked sausages or little smokies dry with paper towels.</li>" +
+    "<li>Unroll 1 (8-ounce) can refrigerated crescent roll dough on a work surface. Separate the dough along the perforated seams into 8 triangles. Use a pizza cutter or sharp knife to cut each triangle lengthwise into 3 narrow triangles, 24 total.</li>" +
+    "<li>Place 1 sausage at the wide end of a dough triangle. Roll towards the pointed end, wrapping the dough around the sausage and allowing the dough to overlap. Place on the baking sheet seam-side down. Repeat with the remaining sausages, spacing them evenly apart on the baking sheet.</li>" +
+    "<li>Brush the tops and sides of the dough with a thin layer of the egg wash. Sprinkle with flaky salt or everything bagel seasoning if desired.</li>" +
+    "<li>Bake until the dough is puffed and golden brown, 13 to 15 minutes. Serve warm with mustard, ketchup, or your favorite dipping sauce.</li>" +
     "</ol>";
   closeButton.style.display = "block";
+  document.getElementById('answer').style.display = 'block';
 }
 
 function app2() {
-  heading.textContent = "Loaded Potato Skins";
+  document.getElementById('answer-container').style.display = 'block';
+  heading.textContent = "Football Cheese Ball and Charcuterie Board";
   heading.style.display = "block";
-  answer.innerHTML = "<h3>Ingredients</h3>" +
+  answer.innerHTML = "<img src='images/Football_Cheese_Ball_and_Charcuterie_Board.png' alt='Stacked Loaded Potato Skins on white plate with dipping sauce in back. source: https://tornadoughalli.com/loaded-potato-skins/'>" +
+    "<h3>Ingredients</h3>" +
     "<br></br>" +
-    "<strong>Potato Skins</strong>" +
+    "<strong>Cheese Ball: </strong>" +
     "<ul>" +
-    "<li>8 small russet potatoes</li>" +
-    "<li>1 tablespoon olive oil</li>" +
-    "<li>2 teaspoons kosher salt</li>" +
-    "</ul>" +
-    "<ul>" +
-    "<li>3 tablespoons salted butter, melted</li>" +
-    "<li>½ teaspoon black pepper</li>" +
-    "<li>¼ teaspoon garlic powder</li>" +
-    "<li>¼ teaspoon onion powder</li>" +
-    "<li>¼ teaspoon smoked paprika</li>" +
+    "<li>6 ounces pecan pieces, chopped</li>" +
+    "<li>12 slices bacon</li>" +
+    "<li>1 1/2 pounds cream cheese, at room temperature</li>" +
+    "<li>6 ounces mild yellow Cheddar, shredded (about 1 1/2 cups)</li>" +
+    "<li>6 ounces smoked Gouda, shredded (about 1 1/2 cups)</li>" +
+    "<li>1 tablespoon Worcestershire sauce</li>" +
+    "<li>2 teaspoons hot sauce</li>" +
+    "<li>1 teaspoon ground cumin</li>" +
+    "<li>4 scallions, finely chopped</li>" +
+    "<li>1 piece mozzarella string cheese</li>" +
     "</ul>" +
     "<br></br>" +
-    "<strong>For the filling:</strong>" +
+    "<strong>Board:</strong>" +
 
     "<ul>" +
-    "<li>8 ounces shredded sharp cheddar cheese</li>" +
-    "<li>8 slices bacon, cooked crispy and crumbled</li>" +
-    "<li>Sour cream to serve</li>" +
-    "<li>Thinly sliced green onions to serve</li>" +
+    "<li>1 1/2 pounds thin-sliced charcuterie, such as salami, sweet or hot soppressata, sandwich-size pepperoni, etc.</li>" +
+    "<li>Assorted cut green vegetables and fruits, such as grapes, Granny Smith apples, broccoli, snow peas, green bell peppers and cucumbers, for serving</li>" +
+    "<li>Square and round snack crackers, for serving</li>" +
+    "<li>Prepared ranch dressing, for serving</li>" +
+    "<li>Prepared blue cheese dressing, for serving</li>" +
     "</ul>" +
     "<br></br>" +
     "<strong>Instructions</strong>" +
     "<ol>" +
-    "<li>Preheat the oven to 400 degrees F. Wash the potatoes and pat them dry with a paper towel, place them on a baking sheet.</li>" +
-    "<li>Pierce the potatoes all over with a fork so any excess steam can escape.</li>" +
-    "<li>Brush the outsides with the olive oil, and sprinkle with the salt all over covering the potatoes.</li>" +
-    "<li>Place in the oven and bake for 30-60 minutes, depending on the size of the potatoes, until a knife inserted into the potatoes goes in smoothly. Let them cool completely, or until they are cool enough to handle on the baking sheet.</li>" +
-    "<li>In a small bowl, stir together the melted butter, pepper, garlic powder, onion powder, and smoked paprika.</li>" +
-    "<li>Next, cut the potatoes in half and scoop out the insides, leaving about a ¼ inch border of the potato attached to the skin.</li>" +
-    "<li>Place the potatoes cut side down onto the baking sheet and brush the outside with half of the butter mixture.</li>" +
-    "<li>Place back in the oven and bake for 8 minutes, turn them over, and brush the inside of the potatoes with the remaining butter mixture. Bake for an additional 8 minutes until the edges are golden brown and crispy.</li>" +
-    "<li>Add the cheese and bacon to the inside cup of the potato skins evenly.</li>" +
-    "<li>Bake for an additional 5 minutes until the cheese is melted.</li>" +
-    "<li>Serve immediately with sour cream and green onions.</li>" +
+    "<li>For the cheese ball: Preheat the oven to 350 degrees F.</li>" +
+    "<li>Spread the pecans on a baking sheet and bake until lightly toasted, 5 to 6 minutes. Set aside to cool.</li>" +
+    "<li>Cook the bacon, in batches if needed, in a large skillet over medium-high heat until crisp, about 6 minutes. Drain on paper towels. Chop the bacon.</li>" +
+    "<li>Combine the cream cheese, Cheddar, smoked Gouda, Worcestershire, hot sauce and cumin in a food processor, Process, scraping down the work bowl once halfway through, until smooth. Add the scallions, 1/2 cup of the chopped pecans and 1/2 cup of the chopped bacon. Pulse to evenly distribute.</li>" +
+    "<li>Combine the remaining bacon and pecans in a medium bowl and toss well.</li>" +
+    "<li>Form the cream cheese mixture into a football shape in the middle of a large serving board. Pat the pecan bacon mixture evenly over the tops and sides so it adheres. Brush away any excess. Pull the string cheese into pieces and cut to make the laces of the football. Chill the cheese ball until firm, about 2 hours.</li>" +
+    "<li>For the board: To assemble, fold the charcuterie in quarters and shingle them to make a standing rim around the edge of the board. Set 4 shot glass-size cups where goal posts would be in a stadium. Fill in the space around the cheese ball with the vegetables and fruit. Lay a row of each cracker just inside the charcuterie border to resemble little 'seats' in your stadium. Pour ranch and blue cheese dressing into the shot cups for dipping.</li>" +
     "</ol>";
   closeButton.style.display = "block";
 }
 function app3() {
+  document.getElementById('answer-container').style.display = 'block';
   heading.textContent = "Game Day Wings";
   heading.style.display = "block";
-  answer.innerHTML = "<h3>Ingredients</h3>" + "<br></br>" +
+  answer.innerHTML = "<img src='images/buffalo-wings-overhead2-WR-768x1024.jpg' alt='overhead view of buffalo wings on a white platter with celery and white sauce. source:https://www.budgetbytes.com/buffalo-wings/'>" +
+    "<h3>Ingredients</h3>" + "<br></br>" +
     "<ul>" +
     "<strong>Chicken Wings</strong>" +
     "<li>1 Tbsp cornstarch ($0.03)</li>" +
@@ -135,32 +158,4 @@ function app3() {
   closeButton.style.display = "block";
 }
 
-//Hamburger menu function
-function hamburger() {
-  var navlinks = document.getElementById("nav-links");
-  var menuicon = document.getElementById("icon");
-  if (navlinks.style.display === "block") {
-    navlinks.style.display = "";
-    menuicon.style.color = "#2a1f14";
-  } else {
-    navlinks.style.display = "block";
-    menuicon.style.color = "#f6eee4";
-  }
-  // Close menu when a nav link is clicked
-document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('nav-links').style.display = "";  // ← empty string
-        document.getElementById('icon').style.color = '#2a1f14';
-    });
-});
 
-// Close menu when clicking outside
-document.addEventListener('click', function(event) {
-    const nav = document.querySelector('.mobile-nav');
-    const navLinks = document.getElementById('nav-links');
-    if (!nav.contains(event.target)) {
-        navLinks.style.display = "";  // ← empty string
-        document.getElementById('icon').style.color = '#2a1f14';
-    }
-});
-}
