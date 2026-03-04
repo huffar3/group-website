@@ -29,18 +29,33 @@
     </header>
 
     <!-- Hero Image Section -->
-    <section class="hero">
-
+    <section class="header title-row">
         <!-- <h1>Hero Image</h1> -->
-        <a href="index.html"><img src="images/hero_copy1_1600x500.png"
-            alt="yellow background with pizza, hot dog, beer and football on foreground">
-        </a>
+        <!--Will only work if running on live server-->
+        <div class="title-left">
+            <blockquote 
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DUjMHLaEdFT/"
+                data-instgrm-version="14"
+                style="background:#FFF; border:0; margin:1px auto; max-width:540px; width:100%;">
+                <a href="https://www.instagram.com/reel/DUjMHLaEdFT/"></a>
+            </blockquote><br>
+
+                <sub>Pause me before playing video</sub>
+                <audio controls src="Media/track3.mp3" autoplay loop></audio>
+            </div>
+        
+            <div class="hero-2027">
+                <a href="index.html">
+                <img src="images/hero_copy1_1600x500.png" alt="">
+                </a>
+            </div>
     </section>
-
-    <!-- Passive White Space -->
-    <div class="passive-space"></div>
-
-    <video class="title-video" src="Media/2027_Title.mp4" autoplay loop muted></video>
+    <section class="hero-2027-mobile">
+        <!-- <h1>Hero Image</h1> -->
+        <img src="images/hero_copy1_1600x500.png"
+            alt="yellow background with pizza, hot dog, beer and football on foreground">
+    </section>
 
     <!-- Passive White Space -->
     <div class="passive-space"></div>
@@ -56,9 +71,7 @@
 
                 <div class="section-spacer"></div>
 
-                <div class="image-placeholder video-slot">
-                    <video id="Steak" src="Media/steak.mp4" autoplay loop muted></video>
-                </div>
+                
 
                 <div class="section-spacer"></div>
 
@@ -70,7 +83,9 @@
             <!-- Middle Column - Text Area -->
             <main>
                 <div class="text-area">
-                    <h2>Super Bowl LXI</h2>
+                    <h2 class="title-tab-mobile">&#x1F3C8 Super Bowl LXI &#x1F3C8</h2>
+                    <video class="title-video" src="Media/2027_Title.mp4" autoplay loop muted></video>
+                    <br>
                     <p>
                         Super Bowl LXI will take place in the city of Los Angeles, California at SoFi Stadium. While every city has their 
                         own traditional game day foods. Los Angeles is known for its Mexican food, so we have chosen to feature some of the 
@@ -78,25 +93,6 @@
                         streets and in the homes of Los Angeles.
                     </p>
                 </div>
-
-                <div class="section-spacer"></div>
-
-                <section>
-                    <sub>Pause me before playing video</sub><br>
-                    <audio controls src="Media/track3.mp3" autoplay loop></audio>
-                </section>
-                
-                <!--Will only work if running on live server-->
-                <div class="text-areaEmbedded">
-                    <blockquote 
-                        class="instagram-media"
-                        data-instgrm-permalink="https://www.instagram.com/reel/DUjMHLaEdFT/"
-                        data-instgrm-version="14"
-                        style="background:#FFF; border:0; margin:1px auto; max-width:540px; width:100%;">
-                        <a href="https://www.instagram.com/reel/DUjMHLaEdFT/"></a>
-                    </blockquote>
-                </div>
-  
             </main>
 
             <!-- Right Column - Sidebar -->
@@ -105,13 +101,11 @@
                     <!-- <strong>Navigation Image</strong> -->
                     <img src="images/SuperBowl_XLI.jpg" alt="Super Bowl XLI">
                 </div>
-
-                <div class="section-spacer"></div>
             </aside>
         </div>
     </div>
         <div id="Common foods of LA" class="container" >
-                    <table>
+                    <table class="contact-desk-tab">
                         <caption>Food and Beverages of Los Angeles</caption>
 
                         <tr>
