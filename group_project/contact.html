@@ -10,11 +10,14 @@
 
 <body class="hero-center">
     <!-- Header -->
-    <header>
+   <header>
         <div class="header-content">
-            <!-- Navigation -->
-            <nav>
-                <ul>
+            <nav class="mobile-nav">
+                <!-- Move nav-icon ABOVE the ul -->
+                <a class="nav-icon" onclick="hamburger()">
+                    <div id="icon">&#9776;</div>
+                </a>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="appetizers.html">Appetizers</a></li>
@@ -30,6 +33,9 @@
     </header>
 
     <!-- Hero Image Section -->
+     <div class="mobile-hero">
+        <h2>Big Game Day Snacks</h2>
+    </div>
     <section class="hero">
         <a href="index.html"><img src="images/hero_copy1_1600x500.png"
             alt="yellow background with pizza, hot dog, beer and football on foreground">
@@ -172,6 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
 

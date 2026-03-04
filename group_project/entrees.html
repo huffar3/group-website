@@ -11,9 +11,12 @@
     <!-- Header -->
     <header>
         <div class="header-content">
-            <!-- Navigation -->
-            <nav>
-                <ul>
+            <nav class="mobile-nav">
+                <!-- Move nav-icon ABOVE the ul -->
+                <a class="nav-icon" onclick="hamburger()">
+                    <div id="icon">&#9776;</div>
+                </a>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="appetizers.html">Appetizers</a></li>
@@ -29,6 +32,9 @@
     </header>
 
     <!-- Hero Image Section -->
+     <div class="mobile-hero">
+        <h2>Big Game Day Snacks</h2>
+    </div>
     <section class="hero">
         <img src="images/hero_copy1_1600x500.png"
             alt="yellow background with pizza, hot dog, beer and football on foreground">
@@ -41,27 +47,26 @@
     <div class="container-center">
         <div class="main-layout">
             <!-- Left Column - Images -->
-            <div class="left-column">
+           <div class="left-column">
+                <strong><a href="sides.html">Sides</a></strong><br>
+                <div class="nav-image">
+                    <a href="sides.html"><img src="images/LOADED-POTATO-SKINS.jpg" alt="Loaded Potato Skins"></a>
+                </div>
 
-            <div class="nav-image">
-                <img src="images/street_tacos.jpg" alt="Street Tacos">
+                <div class="section-spacer"></div>
+
+                <strong><a href="desserts.html">Desserts</a></strong><br>
+                <div class="nav-image">
+                    <a href="desserts.html"><img src="images/cookies.jpg" alt="Desserts"></a>
+                </div>
+
+                <div class="section-spacer"></div>
+
+                <strong><a href="beverages.html">Beverages</a></strong><br>
+                <div class="nav-image">
+                    <a href="beverages.html"><img src="images/mojito.jpg" alt="Beverages"></a>
+                </div>
             </div>
-
-            <div class="section-spacer"></div>
-
-            <div class="nav-image">
-                <img src="images/danger_dog.jpg" alt="Danger Dog">
-            </div>
-
-            <div class="section-spacer"></div>
-
-            <div class="nav-image">
-                <img src="images/Skillet-Beef-Nachos-800x1023.jpg" alt="Skillet Beef Nachos">
-            </div>
-
-            <div class="section-spacer"></div>
-            </div>
-
             <!-- Middle Column - Text Area -->
             <main>
                 <div class="text-area">
@@ -136,5 +141,6 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

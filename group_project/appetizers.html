@@ -12,10 +12,12 @@
     <!-- Header -->
     <header>
         <div class="header-content">
-            <!-- <div class="logo"><img src="/group_project/images/header.png" alt="green header"></div> -->
-            <!-- Navigation -->
-            <nav>
-                <ul>
+            <nav class="mobile-nav">
+                <!-- Move nav-icon ABOVE the ul -->
+                <a class="nav-icon" onclick="hamburger()">
+                    <div id="icon">&#9776;</div>
+                </a>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="appetizers.html">Appetizers</a></li>
@@ -30,6 +32,9 @@
         </div>
     </header>
     <!-- Hero Image Section -->
+     <div class="mobile-hero">
+        <h2>Big Game Day Snacks</h2>
+    </div>
     <section class="hero">
         <!-- <h1>Hero Image</h1> -->
         <img src="images/hero_copy1_1600x500.png"
@@ -44,23 +49,23 @@
         <div class="main-layout">
             <!-- Left Column - Images -->
             <div class="left-column">
-                <div class="image-placeholder">
-                    <strong>Image</strong><br>
-                    (could be other elements)
+                <strong><a href="entrees.html">Entrees</a></strong><br>
+                <div class="nav-image">
+                    <a href="entrees.html"><img src="images/street_tacos.jpg" alt="Street Tacos"></a>
                 </div>
 
                 <div class="section-spacer"></div>
 
-                <div class="image-placeholder">
-                    <strong>Image</strong><br>
-                    (could be other elements)
+                <strong><a href="sides.html">Sides</a></strong><br>
+                <div class="nav-image">
+                    <a href="sides.html"><img src="images/LOADED-POTATO-SKINS.jpg" alt="Loaded Potato Skins"></a>
                 </div>
 
                 <div class="section-spacer"></div>
 
-                <div class="image-placeholder">
-                    <strong>Image</strong><br>
-                    (could be other elements)
+                <strong><a href="desserts.html">Desserts</a></strong><br>
+                <div class="nav-image">
+                    <a href="desserts.html"><img src="images/cookies.jpg" alt="Desserts"></a>
                 </div>
             </div>
 
@@ -79,15 +84,15 @@
                         <strong>Dishes</strong>
                         <div class="app-grid">
                             <div class="app-card" onclick="app1()">
-                                <img src="images/Skillet-Beef-Nachos-800x1023.jpg" alt=" A Skillet Filled with Layers of Beef Nachos and Topped with Melted Cheese, 
-                                Tomato, Sour Cream, and Lime. source: https://iambaker.net/beef-nachos/">
-                                <h3>Big Game Day Nachos</h3>
+                                <img src="images/pigs_in_a_blanket.png" alt="overhead shot of pigs in a blanket on a 
+                                plate with mustard on the side source: https://www.thekitchn.com/pigs-in-a-blanket-recipe-23256899">
+                                <h3>Best-Ever Pigs in a Blanket</h3>
                                 <!-- <p onclick><strong>Nachos</strong></p> -->
                             </div>
                             <div class="app-card" onclick="app2()">
-                                <img src="images/LOADED-POTATO-SKINS.jpg"
+                                <img src="images/Football_Cheese_Ball_and_Charcuterie_Board.png"
                                     alt="Stacked Loaded Potato Skins on white plate with dipping sauce in back. source: https://tornadoughalli.com/loaded-potato-skins/">
-                                <h3>Loaded Potato Skins</h3>
+                                <h3>Football Cheese Ball and Charcuterie Board</h3>
 
                             </div>
                             <div class="app-card" onclick="app3()">
@@ -103,31 +108,32 @@
 
                 <div class="section-spacer"></div>
 
-                <div class="text-area">
+                <div class="text-area" id="answer-container">
                     <div id="answer">
                         <h2></h2>
                         <p></p>
-                            <button onclick="clearAnswer()" class="close-button" style="display:none">✕ Close</button>
+                        <button onclick="clearAnswer()" class="close-button" style="display:none">✕ Close</button>
                     </div>
 
                 </div>
             </main>
 
-            <!-- Right Column - Sidebar -->
-            <aside class="right-sidebar">
-                <div class="nav-image">
-                    <!-- <strong>Navigation Image</strong> -->
-                    <a href="2027game.html"><img src="images/SuperBowl_XLI.jpg" alt="Super Bowl XLI"></a>
+            <!-- Right Column - Column -->
+            <aside class="right-column">
+                <div class="image-placeholder video-slot">
+                    <video id="Arrow" src="Media/arrow_down.mp4" autoplay loop muted></video></a>
                 </div>
-
-
-                <div class="section-spacer"></div>
-
-                <div class="active-space">
-                    Active White Space
+                <div>
+                    <a href="2027game.html">
+                        <strong>Super Bowl LXI</strong><br>
+                        <div class="nav-image">
+                            <img src="images/Super_boxl_lxi.png" alt="Super Bowl LXI">
+                        </div>
+                    </a>
                 </div>
-            </aside>
         </div>
+        <div class="section-spacer"></div>
+        </aside>
     </div>
 
     <!-- Passive White Space -->
