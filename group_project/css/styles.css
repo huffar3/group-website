@@ -132,6 +132,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100%;
+
 }
 
 .instagram-media {
@@ -648,6 +649,10 @@ footer {
         display: none;
     }
 
+    .mobile-list{
+        display: block;
+    }
+
     /* Footer text size */
     .footer-content p {
         font-size: 0.9rem;
@@ -739,6 +744,10 @@ footer {
         display: block;  
     }
 
+    .mobile-list{
+        display: none;
+    }
+
 }
 /* Desktop - 1025px and up */
 @media (min-width: 1025px) {
@@ -778,6 +787,10 @@ footer {
     } 
     
     .title-tab-mobile{
+        display: none;
+    }
+
+    .mobile-list{
         display: none;
     }
 }
