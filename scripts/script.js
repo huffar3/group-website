@@ -134,3 +134,33 @@ function app3() {
     "</ol>";
   closeButton.style.display = "block";
 }
+
+//Hamburger menu function
+function hamburger() {
+  var navlinks = document.getElementById("nav-links");
+  var menuicon = document.getElementById("icon");
+  if (navlinks.style.display === "block") {
+    navlinks.style.display = "";
+    menuicon.style.color = "#2a1f14";
+  } else {
+    navlinks.style.display = "block";
+    menuicon.style.color = "#f6eee4";
+  }
+  // Close menu when a nav link is clicked
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('nav-links').style.display = "";  // ← empty string
+        document.getElementById('icon').style.color = '#2a1f14';
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('.mobile-nav');
+    const navLinks = document.getElementById('nav-links');
+    if (!nav.contains(event.target)) {
+        navLinks.style.display = "";  // ← empty string
+        document.getElementById('icon').style.color = '#2a1f14';
+    }
+});
+}

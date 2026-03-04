@@ -12,10 +12,12 @@
     <!-- Header -->
     <header>
         <div class="header-content">
-            <!-- <div class="logo"><img src="/group_project/images/header.png" alt="green header"></div> -->
-            <!-- Navigation -->
-            <nav>
-                <ul>
+            <nav class="mobile-nav">
+                <!-- Move nav-icon ABOVE the ul -->
+                <a class="nav-icon" onclick="hamburger()">
+                    <div id="icon">&#9776;</div>
+                </a>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="appetizers.html">Appetizers</a></li>
@@ -45,7 +47,7 @@
         <div class="main-layout">
             <!-- Left Column - intentionally left blank -->
             <div class="left-column">
-                
+
             </div>
 
             <!-- Middle Column - Text Area -->
@@ -94,24 +96,24 @@
             </main>
 
             <!-- Right Column - Sidebar -->
- <aside class="right-column">
-        <div class="image-placeholder video-slot">
-            <video id="Arrow" src="Media/arrow_down.mp4" autoplay loop muted></video></a>
-        </div>
-        <div>
-            <a href="2027game.html">
-                <strong>Super Bowl LXI</strong><br>
-                <div class="nav-image">
-                    <img src="images/Super_boxl_lxi.png" alt="Super Bowl LXI">
+            <aside class="right-column">
+                <div class="image-placeholder video-slot">
+                    <video id="Arrow" src="Media/arrow_down.mp4" autoplay loop muted></video></a>
                 </div>
-            </a>
-        </div>
+                <div>
+                    <a href="2027game.html">
+                        <strong>Super Bowl LXI</strong><br>
+                        <div class="nav-image">
+                            <img src="images/Super_boxl_lxi.png" alt="Super Bowl LXI">
+                        </div>
+                    </a>
+                </div>
         </div>
         <div class="section-spacer"></div>
-    </aside>
+        </aside>
 
 
-        </div>
+    </div>
     </div>
 
     <!-- Passive White Space -->
@@ -126,6 +128,7 @@
             </div>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
