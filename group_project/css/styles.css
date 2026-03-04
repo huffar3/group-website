@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+.template .hero {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    height: 500px;
+}
+
+.hero iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -573,6 +585,10 @@ footer {
 @media (max-width: 767px) {
     header {
         border-bottom: none;
+    }
+
+    .template .hero {
+        display: flex !important;  /* overrides the mobile hide */
     }
 
     .main-layout {
