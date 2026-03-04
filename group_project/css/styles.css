@@ -81,6 +81,19 @@ header {
     font-weight: bold;
 }
 
+.hero-2027-mobile {
+    border: 2px solid #000;
+    border-top: none;
+}
+
+.hero-2027-mobile img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-position: center;
+}
+
+
 /* Passive White Space */
 .passive-space {
     height: 40px;
@@ -99,6 +112,48 @@ header {
     display: block;
     margin: 0 auto;
 }
+
+.title-row {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f4ca44;
+    border: #000;
+    padding: 20px 0;
+}
+
+
+.title-left{
+    flex: 1;                     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.instagram-media {
+    margin: 0 auto !important;
+    max-height: 100%;
+}
+
+.hero-2027 {
+    flex: 1;                     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Hero image scaling */
+.hero-2027 img {
+    max-width: 100%;             
+    max-height: 100%;           
+    object-fit: contain;
+}
+
 
 /* Navigation */
 nav {
@@ -200,15 +255,7 @@ main {
     padding: 20px;
     min-height: 180px;
     max-width: 800px;
-}
-
-.text-areaTable{
-    border: 2px solid #000;
-    padding: 20px;
-    min-height: 180px;
-    max-width: 1200px;
-    width: 100%;
-    box-sizing: border-box;
+    border-radius: 12px;
 }
 
 .text-areaMap {
@@ -219,6 +266,7 @@ main {
     max-height: 800px;
     overflow: hidden;
     box-sizing: border-box;
+    border-radius: 12px;
 }
 
 form label {
@@ -235,33 +283,7 @@ form textarea {
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-
-.text-areaEmbedded {
-    border: 2px solid #000;
-    border-radius: 15px;
-    overflow: hidden;
-    min-height: 350px;
-    padding : 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Style rules for instagram embed*/
-.text-areaEmbedded .instagram-media,
-.text-areaEmbedded .instagram-media * {
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-
-.text-areaEmbedded .instagram-media {
-    min-height: 350px;        
-    margin: 0 auto !important;
-    display: block;
-    object-fit: cover;
+    border-radius: 12px;
 }
 
 .text-areaMap iframe {
@@ -306,6 +328,7 @@ table{
     height: auto;
     display: block;
     object-fit: cover;
+    border-radius: 12px;
 }
 .btn{
     display: block;
@@ -328,16 +351,11 @@ table{
 .nav-image {
 
     border: 2px solid #000;
-    /* text-align: center; */
-    /* min-height: 300px;  */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* font-weight: bold; */
     width: auto;
     height: auto;
     display: block;
     object-fit: cover;
+    
 }
 
 .nav-image img {
@@ -345,6 +363,7 @@ table{
     height: 100%;
     display: block;
     object-fit: cover;
+    
 }
 
 
@@ -383,6 +402,7 @@ table{
 }
 
 .team-card,
+.team-card-left,
 .app-card {
     display: flex;
     flex-direction: column;
@@ -395,6 +415,7 @@ table{
 }
 
 .team-card img,
+.team-card-left img,
 .app-card img {
     width: 150px;
     height: 150px;
@@ -404,12 +425,14 @@ table{
 }
 
 .team-card h3,
+.team-card-left p,
 .app-card h3 {
     font-size: 1.1rem;
     margin: 0 0 10px 0;
 }
 
 .team-card p,
+.team-card-left p,
 .app-card p {
     font-size: 0.9rem;
     color: #555;
@@ -492,6 +515,15 @@ footer {
         height: auto;
     }
 
+    .hero-2027-mobile img{
+        height: auto;
+    }
+    
+    .title-tab-mobile{
+        display: block;
+        text-align: center;
+    }
+
     .hero h1 {
         font-size: 22px;
         padding: 10px;
@@ -500,7 +532,6 @@ footer {
     .nav-image {
         flex: 1;
         min-height: 150px;
-        
     }
 
     nav ul {
@@ -557,6 +588,10 @@ footer {
         font-size: 0.8rem;
     }
 
+    .team-card-left{
+        display: none;
+    }
+
     /* Right sidebar: stack below main content, full width */
     .right-sidebar {
         width: 100%;
@@ -609,6 +644,10 @@ footer {
         height: 15px;
     }
 
+    .contact-desk-tab{
+        display: none;
+    }
+
     /* Footer text size */
     .footer-content p {
         font-size: 0.9rem;
@@ -620,6 +659,11 @@ footer {
     .phone-desk {
         display: none;
     }
+
+    .title-row{
+        display: none;
+    }
+
 }
 
 /* TABLET — 768px to 1024px */
@@ -634,6 +678,19 @@ footer {
     .hero img {
         height: auto;
     }
+    
+    .title-video{
+        display: none;
+    }
+
+    .title-tab-mobile{
+        display: block;
+        text-align: center;
+    }
+
+    .hero-2027-mobile img{
+        display: none;
+    }
 
     nav .container {
         padding: 0;
@@ -646,7 +703,7 @@ footer {
 
     /* Collapse left and right columns so main content gets more room */
     .left-column,
-    .right-sidebar {
+    .right-sidebar, .left-column-contact {
         width: 120px;
     }
 
@@ -658,8 +715,9 @@ footer {
     }
 
     /* Slightly smaller team card images */
-    .team-card img,
-    .app-card img {
+    .team-card img, 
+    .app-card img,
+    .team-card-left img{
         width: 120px;
         height: 120px;
     }
@@ -715,5 +773,11 @@ footer {
         display: block;  
     }
 
+    .hero-2027-mobile img{
+        display: none;
+    } 
     
+    .title-tab-mobile{
+        display: none;
+    }
 }
