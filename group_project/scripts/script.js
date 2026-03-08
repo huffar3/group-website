@@ -158,4 +158,85 @@ function app3() {
   closeButton.style.display = "block";
 }
 
+function drink1() {
+  document.getElementById('answer-container').style.display = 'block';
+  heading.textContent = "Mai Tai";
+  heading.style.display = "block";
+  answer.innerHTML = "<img src='images/mai_tai.png' alt=' Mai Tai cocktail garnished with a cherry and lime slices source: https://www.allrecipes.com/recipe/73287/mai-tai/'>" +
+    "<h3>Ingredients</h3>" + 
+    "<li>1 cup ice cubes</li>" +
+    "<li>3 fluid ounces pineapple juice</li>" +
+    "<li>2 fluid ounces orange juice</li>" +
+    "<li>1 (1.5 fluid ounce) jigger spiced rum</li>" +
+    "<li>½ (1.5 fluid ounce) jigger coconut-flavored rum</li>" +
+    "<li>1 teaspoon grenadine syrup</li>" +
+    "<li>2 lime slices</li>" +
+    "<li>1 maraschino cherry</li>" +
+    "</ul>" +
+    "<br></br>" +
+    "<h3>Steps</h3>" +
+    "<ol>" +
+    "<li>Gather all ingredients.</li>" +
+    "<li>Fill a cocktail shaker with ice cubes.</li>" +
+    "<li>Add pineapple juice, orange juice, spiced rum, coconut rum, and grenadine. Shake vigorously and strain into a glass full of ice.</li>" +
+    "<li>garnish with 2 limes and 1 maraschino cherry</li>" +
+    "<li>Serve and enjoy!</li>" +
+    "</ol>";
+  closeButton.style.display = "block";
+}
+function drink2() {
+  document.getElementById('answer-container').style.display = 'block';
+  heading.textContent = "Mojito";
+  heading.style.display = "block";
+  answer.innerHTML = "<img src='images/mojito.jpg' alt='mojito garnished with mint'>" +
+    "<h3>Ingredients</h3>" +
+    "<ul>" +
+    "<li>10 fresh mint leaves</li>" +
+    "<li>½ medium lime, cut into 3 wedges, divided</li>" +
+    "<li>2 tablespoons white sugar, or to taste</li>" +
+    "<li>1 cup ice cubes, or as needed</li>" +
+    "<li>1 ½ fluid ounces white rum</li>" +
+    "<li>½ cup club soda, or as needed</li>" +
+    "</ul>" +
+    "<br></br>" +
+    "<h3>Steps</h3>" +
+    "<ol>" +
+    "<li>Gather the ingredients.</li>" +
+    "<li>Place mint leaves and 1 lime wedge into a sturdy glass. Use a muddler and crush to release mint oils and lime juice.</li>" +
+    "<li>Add remaining lime wedges and 2 tablespoons sugar, and muddle again to release the lime juice. Do not strain the mixture.</li>" +
+    "<li>Fill the glass almost to the top with ice.</li>" +
+    "<li>Pour in rum and fill the glass with club soda.</li>" +
+    "<li>Stir, taste, and add more sugar if desired.</li>" +
+    "</ol>";
+  closeButton.style.display = "block";
+}
+function drink3() {
+  document.getElementById('answer-container').style.display = 'block';
+  heading.textContent = "Bloody Mary";
+  heading.style.display = "block";
+  answer.innerHTML = "<img src='images/bloodymary_card.jpg' alt='Bloody Mary garnished with a full meal. Garnish includes cheese, olive, pepperoni, chicken wing, cellary, lobster tail, and lime'>" +
+    "<h3>Ingredients</h3>" +
+    "<ul>" +
+    "<li>2-3 Tbsp. Old Bay or seafood seasoning</li>" +
+    "<li>1 lemon plus 1 Tbsp. fresh lemon juice</li>" +
+    "<li>3 oz. vodka</li>" +
+    "<li>6 oz. tomato juice</li>" +
+    "<li>1 tsp. Worcestershire sauce</li>" +
+    "<li>¼ tsp celery salt</li>" +
+    "<li>2 tsp. prepared horseradish</li>" +
+    "<li>2 Tbsp. pickle juice</li>" +
+    "<li>2 Tbsp. juice from pre-cooked, fresh lobster meat</li>" +
+    "</ul>" +
+    "<br></br>" +
+    "<h3>Steps</h3>" +
+    "<ol>" +
+    "<li>Place the old bay on a shallow plate or bowl and set aside. Use the lemon half to squeeze lemon juice around the rim of each 12-ounce glass and dip each into the seafood seasoning. Fill the glasses up with ice and set aside.</li>" +
+    "<li>Pour the vodka, lemon juice, tomato juice, Worcestershire sauce, Tabasco sauce, celery salt, horseradish, pickle juice, and lobster juice in a cocktail shaker along with a handful of ice. Place the lid on the shaker and shake until very cold, about 1 minute. Alternatively, place all Bloody Mary ingredients in a large glass measuring cup or medium pitcher minus the ice and whisk to combine.</li>" +
+    "<li>Pour the Bloody Mary mixture between the two cups.</li>" +
+    "<li>Use a bamboo skewer to spear some of the lobster meat and olives. Garnish each glass with the lobster tail, chicken wing, olives, celery stalks, pickles, cucumbers, summer sausage, pepperoni, cheese, and both a slice of lime and lemon.</li>" +
+     "<li> Serve immediately, with a side of your favorite beer and enjoy!</li>" +
+    "</ol>";
+  closeButton.style.display = "block";
+}
+
 

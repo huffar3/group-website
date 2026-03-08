@@ -583,8 +583,10 @@ footer {
     margin-bottom: 10px;
 }
 
+
 .footer-content a {
     text-decoration: underline;
+    color: yellow;
 }
 
 .mobile-hero {
