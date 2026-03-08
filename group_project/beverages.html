@@ -94,36 +94,36 @@
                     <div class="appetizers">
                         <strong>Top Drinks</strong>
                         <div class="app-grid">
-                            <div class="app-card" onclick="app1()">
-                                <img src="images/mai_tai.png" alt=" Mai Tai cocktail garnished with a cherry and lime slices source: https://www.allrecipes.com/recipe/73287/mai-tai/">
+                            <div class="app-card" onclick="drink1()">
+                                <img src="images/mai_tai.png" alt="Mai Tai cocktail garnished with a cherry and lime slices source: https://www.allrecipes.com/recipe/73287/mai-tai/">
                                 <h3>Mai Tai</h3>
                                 <!-- <p onclick><strong>Nachos</strong></p> -->
                             </div>
-                            <div class="app-card" onclick="app2()">
+                            <div class="app-card" onclick="drink2()">
                                 <img src="images/mojito.jpg"
                                     alt="Mojito garnished with mint on wood table surrounded by cut limes">
                                 <h3>Mojito</h3>
 
                             </div>
-                            <div class="app-card" onclick="app3()">
+                            <div class="app-card" onclick="drink3()">
                                 <img src="images/bloodymary_card.jpg"
                                     alt="Bloody Mary garnished with a full meal. Garnish includes cheese, olive, pepperoni, chicken wing, cellary, lobster tail, and lime">
                                 <h3>Bloody Mary</h3>
 
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <div class="section-spacer"></div>
 
-                <div class="text-area">
+                <div class="text-area" id="answer-container">
                     <div id="answer">
                         <h2></h2>
-                        <p></p>
-                            <button onclick="clearAnswer()" class="close-button" style="display:none">✕ Close</button>
+                        <p class="container-center"></p>
+                        <button onclick="clearAnswer()" class="close-button" style="display:none">✕ Close</button>
                     </div>
+                </div>
             </main>
 
             <!-- Right Column - Sidebar -->
@@ -153,13 +153,14 @@
     <footer>
         <div class="container-center">
             <div class="footer-content">
-                <p><strong>Footer</strong></p>
-                <p>Copyright information, customer support email link, authors of the page, link to top of home page</p>
+                <p>&copy; Copyright 2026. All Rights Reserved</p>
+                <p>Developed by: Garrett, Jose, & Sumit</p>
+                <p><a href="mailto:contact@biggamedaysnacks.net">contact@biggamedaysnacks.net</a></p>
             </div>
         </div>
     </footer>
+<audio id="bgMusic" autoplay ></audio>   
 <script src="../scripts/audioNoVideo.js"></script>
 <script src="../scripts/script.js"></script>
-<audio id="bgMusic" autoplay muted></audio>
 </body>
 </html>
