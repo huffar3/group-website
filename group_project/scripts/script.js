@@ -164,6 +164,7 @@ function drink1() {
   heading.style.display = "block";
   answer.innerHTML = "<img src='images/mai_tai.png' alt=' Mai Tai cocktail garnished with a cherry and lime slices source: https://www.allrecipes.com/recipe/73287/mai-tai/'>" +
     "<h3>Ingredients</h3>" + 
+    "<ul>" +
     "<li>1 cup ice cubes</li>" +
     "<li>3 fluid ounces pineapple juice</li>" +
     "<li>2 fluid ounces orange juice</li>" +
